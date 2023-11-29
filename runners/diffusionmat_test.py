@@ -172,10 +172,9 @@ class Diffusion(object):
 
 
 
-        image_dir = "./Composition-1k-testset/merged/"
-        trimap_dir = "./Composition-1k-testset/trimaps/"
-        alpha_dir = "./Composition-1k-testset/alpha_copy/"
-
+        image_dir = "/content/Composition-1k-Testset/merged"
+        trimap_dir = "/content/Composition-1k-testset/trimaps"
+        alpha_dir = "/content/Composition-1k-testset/alpha_copy"
 
 
         with torch.no_grad():
