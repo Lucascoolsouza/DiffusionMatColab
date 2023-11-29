@@ -147,12 +147,12 @@ class Diffusion(object):
         num_res_blocks=1, dropout=0.1).to(self.device)
 
         
-        ckpt = torch.load("/data/xyy/project_adobe/pretrained_models/ckpt_diffusion.pt")['net_model']
+        ckpt = torch.load("/content/pretrained_models/ckpt_diffusion.pt")['net_model']
         matting_model.load_state_dict(ckpt)
         matting_model = torch.nn.DataParallel(matting_model)
         matting_model.to(self.device)
         matting_model.eval()
-        ckpt = torch.load("/data/xyy/project_adobe/pretrained_models/ckpt_adobe.pth")
+        ckpt = torch.load("/content//pretrained_models/ckpt_adobe.pth")
         
         
         
