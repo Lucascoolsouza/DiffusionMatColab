@@ -98,7 +98,7 @@ class Diffusion(object):
         num_res_blocks=1, dropout=0.1).to(self.device)
 
 
-        ckpt = torch.load("./pretrained_models/ckpt_diffusion.pt")['net_model']
+        ckpt = torch.load("/content/pretrained_models/ckpt_diffusion.pt")['net_model']
 
 
         matting_model.load_state_dict(ckpt)
@@ -113,7 +113,7 @@ class Diffusion(object):
         delta_model = UNet_wo_T(in_channel=33, T=1000, ch=64, ch_mult=[1, 1, 2, 2], attn=[1],
         num_res_blocks=1, dropout=0.1).to(self.device)
 
-        pretrained_path = './pretrained_models/swin_tiny_patch4_window7_224.pth'
+        pretrained_path = '/content//pretrained_models/swin_tiny_patch4_window7_224.pth'
         pretrained_dict = torch.load(pretrained_path, map_location='cuda')['model']
 
 
