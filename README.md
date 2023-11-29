@@ -2,7 +2,7 @@
 
 [paper](https://arxiv.org/pdf/2311.13535.pdf) |  [project website](https://cnnlstm.github.io/DiffusionMat/) |  [video results](https://youtu.be/b_qQvv0R3BA) 
 
-## COLAB
+## COLAB // Not working yet
 
 https://github.com/Lucascoolsouza/DiffusionMatColab/blob/main/GreenscreenColab.ipynb
 
